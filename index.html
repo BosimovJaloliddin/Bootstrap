@@ -10,41 +10,33 @@
 
     <title>Bootstrap-5</title>
     <style>
-        .row>div{
-          margin: 10px;
-          padding: 10px;
-          background-color: red;
-          border-radius: 5px;
-          color: white;
-          text-align: center;
-        }
-    </style>
+    .row{
+        margin-top: 20px;
+    }
+    .row > div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: red;
+        border: 1px solid white;
+        text-align: center;
+        color: white;
+    }
+      </style>
   </head>
   <body>
-      <div class="container-fluid">
+    <div class="container">
         <div class="row">
-          <div class="col">
-            1
-          </div>
-          <div class="col-6">
-            2
-          </div>
-          <div class="col">
-            3
-          </div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
         </div>
         <div class="row">
-          <div class="col">
-            1
-          </div>
-          <div class="col-5">
-            2
-          </div>
-          <div class="col">
-            3
-          </div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
         </div>
-      </div>
+        <div class="row">
+        <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+        </div>
+    </div>
 
       <!-- Bootstrap JS -->
       <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" ></script>
